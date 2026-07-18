@@ -50,11 +50,18 @@ menuToggle?.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
 
+const mobileOverlay = document.querySelector('.mobile-menu-overlay');
+
 navLinks?.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
     menuToggle?.setAttribute('aria-expanded', 'false');
   });
+});
+
+mobileOverlay?.addEventListener('click', () => {
+  navLinks.classList.remove('open');
+  menuToggle?.setAttribute('aria-expanded', 'false');
 });
 
 // Animated counters.
