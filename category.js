@@ -2,41 +2,45 @@ const categoryData = {
   business: {
     title: 'Business Suits',
     description: 'Executive tailoring for boardroom presence, meetings and city events. Structured, modern and exceptionally fitted.',
+    heroImage: 'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.12%20AM%20(1).jpeg',
     images: [
-      'images/WhatsApp%20Image%202026-07-07%20at%202.51.46%20PM%20(1).jpeg',
-      'images/WhatsApp%20Image%202026-07-07%20at%202.51.47%20PM%20(2).jpeg',
-      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.11%20AM.jpeg',
-      'images/WhatsApp%20Image%202026-07-07%20at%202.51.49%20PM%20(1).jpeg'
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.12%20AM%20(2).jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.13%20AM%20(2).jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.14%20AM%20(2).jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.47.13%20AM%20(2).jpeg'
     ]
   },
   wedding: {
     title: 'Wedding Suits',
     description: 'Signature groom wear designed for refined ceremony style, polished silhouettes and memorable luxury.',
+    heroImage: 'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.47.14%20AM.jpeg',
     images: [
-      'images/WhatsApp%20Image%202026-07-07%20at%202.51.46%20PM%20(2).jpeg',
-      'images/WhatsApp%20Image%202026-07-07%20at%202.51.47%20PM%20(3).jpeg',
-      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.13.20%20AM%20(1).jpeg',
-      'images/WhatsApp%20Image%202026-07-07%20at%202.51.49%20PM%20(2).jpeg'
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.13%20AM%20(3).jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.15%20AM%20(2).jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.47.14%20AM%20(1).jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.47.14%20AM%20(2).jpeg'
     ]
   },
   prom: {
     title: 'Prom Suits',
     description: 'Modern statement tailoring with refined details and elevated finishing for unforgettable evenings.',
+    heroImage: 'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.47.15%20AM.jpeg',
     images: [
-      'images/WhatsApp%20Image%202026-07-07%20at%202.51.46%20PM%20(3).jpeg',
-      'images/WhatsApp%20Image%202026-07-07%20at%202.51.47%20PM%20(1).jpeg',
-      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.13.21%20AM%20(1).jpeg',
-      'images/WhatsApp%20Image%202026-07-07%20at%202.51.49%20PM%20(3).jpeg'
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.13%20AM.jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.14%20AM.jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.13.19%20AM.jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.47.15%20AM%20(1).jpeg'
     ]
   },
   bespoke: {
     title: 'Bespoke Fit',
     description: 'Made-to-measure tailoring shaped to your body, lifestyle and personal style with exceptional craftsmanship.',
+    heroImage: 'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.15%20AM%20(2).jpeg',
     images: [
-      'images/about.jpg',
-      'images/hero.jpg',
-      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.12%20AM.jpeg',
-      'images/WhatsApp%20Image%202026-07-07%20at%202.51.50%20PM%20(1).jpeg'
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.15%20AM.jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.13.20%20AM.jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.47.13%20AM.jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.47.15%20AM%20(2).jpeg'
     ]
   }
 };
@@ -78,7 +82,7 @@ function renderCategoryPage() {
   }
 
   if (heroSection) {
-    heroSection.innerHTML = `<img src="${category.images[0]}" alt="${category.title} showcase" loading="eager" />`;
+    heroSection.innerHTML = `<img src="${category.heroImage}" alt="${category.title} showcase" loading="eager" />`;
   }
 
   grid.innerHTML = category.images
