@@ -2,22 +2,42 @@ const categoryData = {
   business: {
     title: 'Business Suits',
     description: 'Executive tailoring for boardroom presence, meetings and city events. Structured, modern and exceptionally fitted.',
-    images: [1, 2, 3, 4, 5, 6]
+    images: [
+      'images/WhatsApp%20Image%202026-07-07%20at%202.51.46%20PM%20(1).jpeg',
+      'images/WhatsApp%20Image%202026-07-07%20at%202.51.47%20PM%20(2).jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.11%20AM.jpeg',
+      'images/WhatsApp%20Image%202026-07-07%20at%202.51.49%20PM%20(1).jpeg'
+    ]
   },
   wedding: {
     title: 'Wedding Suits',
     description: 'Signature groom wear designed for refined ceremony style, polished silhouettes and memorable luxury.',
-    images: [1, 2, 3, 4, 5, 6]
+    images: [
+      'images/WhatsApp%20Image%202026-07-07%20at%202.51.46%20PM%20(2).jpeg',
+      'images/WhatsApp%20Image%202026-07-07%20at%202.51.47%20PM%20(3).jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.13.20%20AM%20(1).jpeg',
+      'images/WhatsApp%20Image%202026-07-07%20at%202.51.49%20PM%20(2).jpeg'
+    ]
   },
   prom: {
     title: 'Prom Suits',
     description: 'Modern statement tailoring with refined details and elevated finishing for unforgettable evenings.',
-    images: [1, 2, 3, 4, 5, 6]
+    images: [
+      'images/WhatsApp%20Image%202026-07-07%20at%202.51.46%20PM%20(3).jpeg',
+      'images/WhatsApp%20Image%202026-07-07%20at%202.51.47%20PM%20(1).jpeg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.13.21%20AM%20(1).jpeg',
+      'images/WhatsApp%20Image%202026-07-07%20at%202.51.49%20PM%20(3).jpeg'
+    ]
   },
   bespoke: {
     title: 'Bespoke Fit',
     description: 'Made-to-measure tailoring shaped to your body, lifestyle and personal style with exceptional craftsmanship.',
-    images: [1, 2, 3, 4, 5, 6]
+    images: [
+      'images/about.jpg',
+      'images/hero.jpg',
+      'suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.12%20AM.jpeg',
+      'images/WhatsApp%20Image%202026-07-07%20at%202.51.50%20PM%20(1).jpeg'
+    ]
   }
 };
 
@@ -34,6 +54,7 @@ function renderCategoryPage() {
   const heading = document.getElementById('categoryHeading');
   const description = document.getElementById('categoryDescription');
   const grid = document.getElementById('categoryGrid');
+  const heroSection = document.querySelector('.hero-media');
 
   if (!category || !grid || !title || !heading || !description) return;
 
@@ -56,19 +77,16 @@ function renderCategoryPage() {
     ogDescription.setAttribute('content', `Explore premium ${category.title.toLowerCase()} with luxury tailoring from Kizz Mich.`);
   }
 
-  const heroSection = document.querySelector('.category-hero');
   if (heroSection) {
-    const heroImage = `images/categories/${categoryKey}/1.jpg`;
-    heroSection.style.backgroundImage = `linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.85)), url('${heroImage}')`;
+    heroSection.innerHTML = `<img src="${category.images[0]}" alt="${category.title} showcase" loading="eager" />`;
   }
 
   grid.innerHTML = category.images
-    .map((index) => {
-      const path = `images/categories/${categoryKey}/${index}.jpg`;
+    .map((path) => {
       return `
-        <article class="category-card category-card-large reveal">
+        <article class="category-card reveal">
           <div class="category-card-media">
-            <img src="${path}" alt="${category.title} image ${index}" loading="lazy" onerror="this.src='images/placeholder.svg'" />
+            <img src="${path}" alt="${category.title} showcase" loading="lazy" />
           </div>
           <div class="category-card-copy">
             <h3>${category.title}</h3>

@@ -7,7 +7,7 @@
     <meta property="og:title" content="Kizz Mich | Luxury Bespoke Tailoring" />
     <meta property="og:description" content="Discover Kizz Mich: premium tailoring for business, wedding, prom and bespoke fit with luxury craftsmanship in Kampala." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/hero-1200.jpg" />
+    <meta property="og:image" content="images/hero.jpg" />
     <meta property="og:site_name" content="Kizz Mich" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#111111" />
@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -22,10 +23,11 @@
       <div class="loader-ring"></div>
     </div>
     <div class="progress-bar" aria-hidden="true"></div>
+
     <header class="site-header" id="home">
       <a class="skip-link" href="#main-content">Skip to content</a>
       <nav class="navbar container" aria-label="Primary navigation">
-        <a href="#home" class="brand" aria-label="Kizz Mich home">Kizz Mich</a>
+        <a href="#home" class="brand" aria-label="Kizz Mich home"><span>K</span>izzMich</a>
         <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
           <span></span>
           <span></span>
@@ -33,30 +35,39 @@
         </button>
         <div class="nav-links" id="nav-links">
           <a href="#home">Home</a>
+          <a href="#about">About</a>
           <a href="#categories">Collections</a>
-          <a href="#trust">Expertise</a>
-          <a href="#showcase">Portfolio</a>
+          <a href="#process">Process</a>
+          <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
+          <div class="nav-social" aria-label="Social links">
+            <a href="https://www.instagram.com/kizz_mich" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
         </div>
       </nav>
       <div class="mobile-menu-overlay" aria-hidden="true"></div>
     </header>
+
     <main id="main-content">
       <section class="hero">
         <div class="hero-media">
-          <picture>
-            <source srcset="images/hero-800.jpg 800w, images/hero-1200.jpg 1200w" sizes="100vw" />
-            <img src="images/hero.jpg" alt="Luxury tailoring studio with premium suit fabric" loading="eager" />
-          </picture>
+          <img src="images/hero.jpg" alt="Luxury tailoring studio with premium suit fabric" loading="eager" />
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content container reveal">
-          <p class="eyebrow">Luxury bespoke tailoring</p>
-          <h1>Tailored with precision, finished with distinction.</h1>
-          <p class="hero-copy">Kizz Mich creates premium suits and formalwear with modern elegance, trusted craftsmanship and a flawless fit.</p>
+          <p class="eyebrow">Kampala's Luxury Tailor</p>
+          <h1>Crafting Bespoke Suits For Gentlemen Who Value Excellence.</h1>
+          <p class="hero-copy">A premium tailoring experience with handcrafted suits designed for confidence, elegance and timeless style.</p>
           <div class="hero-actions">
             <a href="#contact" class="btn btn-primary">Book Appointment</a>
             <a href="#categories" class="btn btn-secondary">View Collection</a>
+          </div>
+          <div class="hero-badges">
+            <span class="floating-pill">Premium Fabric</span>
+            <span class="floating-pill">Custom Fit</span>
+            <span class="floating-pill">Luxury Finish</span>
           </div>
           <div class="hero-stats">
             <div>
@@ -74,177 +85,258 @@
           </div>
         </div>
       </section>
+
       <section class="about section container reveal" id="about">
-        <div class="section-heading">
-          <p class="eyebrow">About Kizz Mich</p>
-          <h2>Crafting modern tailoring for confident, refined individuals.</h2>
-        </div>
         <div class="about-grid">
           <div class="about-copy">
-            <p>Kizz Mich is a premium tailoring studio in Kampala, creating custom suits and formalwear with the highest level of artistry, fit and finish.</p>
-            <p>Every garment is designed to look elegant in motion, feel comfortable throughout the day and reflect your personal presence with understated luxury.</p>
-            <div class="about-highlights">
+            <p class="eyebrow">About KizzMich</p>
+            <h2>Luxury tailoring shaped with meticulous detail and timeless presence.</h2>
+            <p>Kizz Mich is a refined tailoring house in Kampala, creating premium suits and formalwear that elevate every occasion with deliberate design and precise craftsmanship.</p>
+            <p>From consultation to final fitting, every garment is built around comfort, structure, and a polished silhouette that leaves a lasting impression.</p>
+            <div class="about-list">
               <div>
-                <strong>Refined construction</strong>
-                <span>Carefully selected fabrics and hand-finished tailoring for enduring structure.</span>
+                <strong>Attention to detail</strong>
+                <span>Hand-finished construction and immaculate stitching on every seam.</span>
               </div>
               <div>
-                <strong>Personal consultation</strong>
-                <span>Dedicated guidance from design concept through final fitting.</span>
+                <strong>Perfect fit</strong>
+                <span>Custom measurements and refined adjustments for effortless confidence.</span>
+              </div>
+              <div>
+                <strong>Premium fabrics</strong>
+                <span>Luxury materials chosen for comfort, drape, and enduring elegance.</span>
               </div>
             </div>
           </div>
           <div class="about-media">
-            <picture>
-              <source srcset="images/about-600.jpg 600w, images/about-900.jpg 900w" sizes="(max-width: 760px) 100vw, 40vw" />
-              <img src="images/about.jpg" alt="Tailor fitting a bespoke suit in a luxury studio" loading="lazy" />
-            </picture>
+            <img src="images/about.jpg" alt="Luxury tailoring studio with a bespoke fitted suit" loading="lazy" />
           </div>
         </div>
       </section>
-      <section class="trust section container reveal" id="trust">
-        <div class="section-heading">
-          <p class="eyebrow">Why choose us</p>
-          <h2>Trusted by clients who expect premium precision.</h2>
-        </div>
-        <div class="trust-grid">
-          <article class="trust-card">
-            <span class="feature-icon">✔</span>
-            <h3>Expert tailoring</h3>
-            <p>Decades of craftsmanship shaping polished suits and formalwear.</p>
-          </article>
-          <article class="trust-card">
-            <span class="feature-icon">✔</span>
-            <h3>Premium fabrics</h3>
-            <p>Luxury materials selected for touch, durability and elegant drape.</p>
-          </article>
-          <article class="trust-card">
-            <span class="feature-icon">✔</span>
-            <h3>Perfect fit</h3>
-            <p>Individual measurements and precise adjustments for a confident silhouette.</p>
-          </article>
-          <article class="trust-card">
-            <span class="feature-icon">✔</span>
-            <h3>Attention to detail</h3>
-            <p>Hand-finished hems, lining and refined tailoring in every stitch.</p>
-          </article>
-          <article class="trust-card">
-            <span class="feature-icon">✔</span>
-            <h3>Timely delivery</h3>
-            <p>Reliable service for important events, meetings and celebrations.</p>
-          </article>
-          <article class="trust-card">
-            <span class="feature-icon">✔</span>
-            <h3>Personal service</h3>
-            <p>Dedicated support from design concept through final fitting.</p>
-          </article>
+
+      <section class="section section-contrast" id="why-us">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Why Choose Us</p>
+            <h2>A superior experience built around precision, comfort and modern elegance.</h2>
+          </div>
+          <div class="trust-grid">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+              <h3>Premium Fabric</h3>
+              <p>Carefully sourced materials with a rich finish and luxurious drape.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+              <h3>Perfect Measurements</h3>
+              <p>Precision fitting and tailored adjustments for an immaculate silhouette.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-scissors"></i></div>
+              <h3>Hand Finished</h3>
+              <p>Every detail is refined by hand for a true luxury finish.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+              <h3>Fast Delivery</h3>
+              <p>Reliable scheduling for important events, meetings, and special occasions.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-tags"></i></div>
+              <h3>Affordable Luxury</h3>
+              <p>Exceptional quality and design without compromising on value.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-shirt"></i></div>
+              <h3>Modern Designs</h3>
+              <p>Contemporary cuts and refined details for modern gentlemen.</p>
+            </article>
+          </div>
         </div>
       </section>
+
       <section class="categories section container reveal" id="categories">
         <div class="section-heading">
-          <p class="eyebrow">Collections</p>
-          <h2>Tailoring categories shaped for the moments that matter.</h2>
+          <p class="eyebrow">Suit Categories</p>
+          <h2>Signature collections tailored for work, celebration and timeless presence.</h2>
         </div>
-        <div class="category-preview-grid">
-          <a href="category.html?cat=business" class="category-preview-card">
-            <div class="card-visual" style="background-image:url('images/WhatsApp Image 2026-07-07 at 2.51.46 PM (1).jpeg')"></div>
-            <div class="card-copy">
+        <div class="categories-grid">
+          <a href="category.html?cat=business" class="category-card">
+            <div class="category-card-media"><img src="images/WhatsApp%20Image%202026-07-07%20at%202.51.46%20PM%20(1).jpeg" alt="Business suit in premium tailoring" loading="lazy" /></div>
+            <div class="category-card-copy">
               <h3>Business Suits</h3>
-              <p>Structured luxury for executives, boardrooms and city success.</p>
+              <p>Structured silhouettes for executive confidence and polished style.</p>
             </div>
           </a>
-          <a href="category.html?cat=wedding" class="category-preview-card">
-            <div class="card-visual" style="background-image:url('images/WhatsApp Image 2026-07-07 at 2.51.46 PM (2).jpeg')"></div>
-            <div class="card-copy">
+          <a href="category.html?cat=wedding" class="category-card">
+            <div class="category-card-media"><img src="images/WhatsApp%20Image%202026-07-07%20at%202.51.46%20PM%20(2).jpeg" alt="Wedding suit with luxury finish" loading="lazy" /></div>
+            <div class="category-card-copy">
               <h3>Wedding Suits</h3>
-              <p>Elegant groom wear crafted with ceremonial refinement and perfect polish.</p>
+              <p>Elevated ceremony wear with refined elegance and impeccable fit.</p>
             </div>
           </a>
-          <a href="category.html?cat=prom" class="category-preview-card">
-            <div class="card-visual" style="background-image:url('images/WhatsApp Image 2026-07-07 at 2.51.46 PM (3).jpeg')"></div>
-            <div class="card-copy">
+          <a href="category.html?cat=prom" class="category-card">
+            <div class="category-card-media"><img src="images/WhatsApp%20Image%202026-07-07%20at%202.51.46%20PM%20(3).jpeg" alt="Prom suit with contemporary design" loading="lazy" /></div>
+            <div class="category-card-copy">
               <h3>Prom Suits</h3>
-              <p>Modern statement tailoring for memorable evenings and premium presence.</p>
+              <p>Modern statement tailoring for glamorous evenings and standout style.</p>
             </div>
           </a>
-          <a href="category.html?cat=bespoke" class="category-preview-card">
-            <div class="card-visual" style="background-image:url('images/WhatsApp Image 2026-07-07 at 2.51.47 PM (1).jpeg')"></div>
-            <div class="card-copy">
-              <h3>Bespoke Fit</h3>
-              <p>Made-to-measure tailoring shaped precisely to your body and style.</p>
+          <a href="category.html?cat=bespoke" class="category-card">
+            <div class="category-card-media"><img src="images/WhatsApp%20Image%202026-07-07%20at%202.51.47%20PM%20(1).jpeg" alt="Bespoke tailored suit detail" loading="lazy" /></div>
+            <div class="category-card-copy">
+              <h3>Traditional Wear</h3>
+              <p>Elegant cultural tailoring with distinguished craftsmanship and luxury finish.</p>
+            </div>
+          </a>
+          <a href="category.html?cat=business" class="category-card">
+            <div class="category-card-media"><img src="images/WhatsApp%20Image%202026-07-07%20at%202.51.47%20PM%20(2).jpeg" alt="Tailored blazer in rich fabric" loading="lazy" /></div>
+            <div class="category-card-copy">
+              <h3>Blazers</h3>
+              <p>Sharp, versatile tailoring for evening refinement and modern dressing.</p>
+            </div>
+          </a>
+          <a href="category.html?cat=bespoke" class="category-card">
+            <div class="category-card-media"><img src="images/WhatsApp%20Image%202026-07-07%20at%202.51.49%20PM%20(2).jpeg" alt="Custom shirt and tailoring presentation" loading="lazy" /></div>
+            <div class="category-card-copy">
+              <h3>Custom Shirts</h3>
+              <p>Perfectly fitted shirts to complement every premium suit ensemble.</p>
             </div>
           </a>
         </div>
       </section>
-      <section class="showcase section container reveal" id="showcase">
+
+      <section class="section container reveal" id="gallery">
         <div class="section-heading">
-          <p class="eyebrow">Portfolio</p>
-          <h2>Curated highlights from our signature tailoring work.</h2>
+          <p class="eyebrow">Featured Gallery</p>
+          <h2>A curated collection of the finest tailoring work from our studio.</h2>
         </div>
-        <div class="showcase-grid">
-          <figure class="showcase-item"><img src="images/WhatsApp Image 2026-07-07 at 2.51.47 PM (2).jpeg" alt="Luxury tailored suit in premium lighting" loading="lazy" /></figure>
-          <figure class="showcase-item"><img src="images/WhatsApp Image 2026-07-07 at 2.51.47 PM (3).jpeg" alt="Premium bespoke suit crafted with flawless details" loading="lazy" /></figure>
-          <figure class="showcase-item"><img src="images/WhatsApp Image 2026-07-07 at 2.51.48 PM (1).jpeg" alt="Elegant menswear tailoring displayed on mannequin" loading="lazy" /></figure>
-          <figure class="showcase-item"><img src="images/WhatsApp Image 2026-07-07 at 2.51.49 PM (1).jpeg" alt="Black tailored jacket with rich golden accents" loading="lazy" /></figure>
-          <figure class="showcase-item"><img src="images/WhatsApp Image 2026-07-07 at 2.51.49 PM (2).jpeg" alt="Modern formal suit with fine styling" loading="lazy" /></figure>
-          <figure class="showcase-item"><img src="images/WhatsApp Image 2026-07-07 at 2.51.49 PM (3).jpeg" alt="Luxury suit with polished tailoring details" loading="lazy" /></figure>
-          <figure class="showcase-item"><img src="images/WhatsApp Image 2026-07-07 at 2.51.50 PM (3).jpeg" alt="Custom suit jacket with premium fabric and cut" loading="lazy" /></figure>
-          <figure class="showcase-item"><img src="images/WhatsApp Image 2026-07-07 at 2.51.50 PM (4).jpeg" alt="Award-winning bespoke tailoring presentation" loading="lazy" /></figure>
+        <div class="gallery-grid">
+          <figure class="gallery-card" data-image="images/hero.jpg" data-alt="Tailoring studio with luxury suit fabric">
+            <img src="images/hero.jpg" alt="Tailoring studio with luxury suit fabric" loading="lazy" />
+          </figure>
+          <figure class="gallery-card" data-image="images/about.jpg" data-alt="Tailor fitting a bespoke suit in a luxury studio">
+            <img src="images/about.jpg" alt="Tailor fitting a bespoke suit in a luxury studio" loading="lazy" />
+          </figure>
+          <figure class="gallery-card" data-image="images/WhatsApp%20Image%202026-07-07%20at%202.51.47%20PM%20(3).jpeg" data-alt="Premium bespoke suit crafted with flawless details">
+            <img src="images/WhatsApp%20Image%202026-07-07%20at%202.51.47%20PM%20(3).jpeg" alt="Premium bespoke suit crafted with flawless details" loading="lazy" />
+          </figure>
+          <figure class="gallery-card" data-image="images/WhatsApp%20Image%202026-07-07%20at%202.51.49%20PM%20(1).jpeg" data-alt="Black tailored jacket with rich accents">
+            <img src="images/WhatsApp%20Image%202026-07-07%20at%202.51.49%20PM%20(1).jpeg" alt="Black tailored jacket with rich accents" loading="lazy" />
+          </figure>
+          <figure class="gallery-card" data-image="suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.11%20AM.jpeg" data-alt="Luxury tailoring showcase from the project collection">
+            <img src="suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.01.11%20AM.jpeg" alt="Luxury tailoring showcase from the project collection" loading="lazy" />
+          </figure>
+          <figure class="gallery-card" data-image="suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.13.20%20AM%20(1).jpeg" data-alt="Elegant tailored jacket in refined form">
+            <img src="suit%20pictures/WhatsApp%20Image%202026-07-18%20at%202.13.20%20AM%20(1).jpeg" alt="Elegant tailored jacket in refined form" loading="lazy" />
+          </figure>
         </div>
       </section>
-      <section class="testimonials section container reveal">
+
+      <section class="section section-contrast" id="process">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Our Process</p>
+            <h2>From first consultation to the final fitting, every step is tailored to excellence.</h2>
+          </div>
+          <div class="process-steps">
+            <article class="process-step">
+              <span class="process-number">01</span>
+              <h3>Consultation</h3>
+              <p>We discuss your style, function, and vision to shape the perfect garment.</p>
+            </article>
+            <article class="process-step">
+              <span class="process-number">02</span>
+              <h3>Measurements</h3>
+              <p>Precision fitting ensures a refined silhouette that feels effortless.</p>
+            </article>
+            <article class="process-step">
+              <span class="process-number">03</span>
+              <h3>Tailoring</h3>
+              <p>Our artisans craft the suit with detail-driven precision and premium finish.</p>
+            </article>
+            <article class="process-step">
+              <span class="process-number">04</span>
+              <h3>Final Fitting</h3>
+              <p>We refine the piece for the perfect result and confident wear.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container reveal">
         <div class="section-heading">
           <p class="eyebrow">Testimonials</p>
-          <h2>Clients who trust us for luxury tailoring.</h2>
+          <h2>Clients trust us for elegance, precision and a truly premium experience.</h2>
         </div>
         <div class="testimonial-grid">
-          <article class="testimonial-card simple-card">
-            <p>“The fit was flawless and the attention to detail was extraordinary. I felt truly elevated.”</p>
-            <h3>Sarah N.</h3>
-            <span>★★★★★</span>
+          <article class="testimonial-card">
+            <div class="quote-mark">“</div>
+            <p>The fit was immaculate and the finish felt truly luxurious. I felt exceptional from the first fitting.</p>
+            <div class="person">
+              <strong>Sarah N.</strong>
+              <span>Business Suit Client</span>
+            </div>
           </article>
-          <article class="testimonial-card simple-card">
-            <p>“Every piece felt bespoke and beautifully finished. Kizz Mich made me look sharp and confident.”</p>
-            <h3>David K.</h3>
-            <span>★★★★★</span>
+          <article class="testimonial-card">
+            <div class="quote-mark">“</div>
+            <p>Every detail was handled with care. My wedding attire looked refined, timeless and effortlessly elegant.</p>
+            <div class="person">
+              <strong>David K.</strong>
+              <span>Wedding Suit Client</span>
+            </div>
           </article>
-          <article class="testimonial-card simple-card">
-            <p>“Professional, elegant, and incredibly attentive. My wedding attire exceeded every expectation.”</p>
-            <h3>Anita M.</h3>
-            <span>★★★★★</span>
+          <article class="testimonial-card">
+            <div class="quote-mark">“</div>
+            <p>Professional, polished and impeccably tailored. Kizz Mich made the whole experience feel premium.</p>
+            <div class="person">
+              <strong>Anita M.</strong>
+              <span>Custom Tailoring Client</span>
+            </div>
           </article>
         </div>
       </section>
+
+      <section class="section container reveal">
+        <div class="cta-card">
+          <div>
+            <p class="eyebrow">Book Your Appointment</p>
+            <h2>Step into a wardrobe that reflects your confidence and taste.</h2>
+          </div>
+          <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
+        </div>
+      </section>
+
       <section class="contact section container reveal" id="contact">
         <div class="section-heading">
           <p class="eyebrow">Contact</p>
-          <h2>Book your personal consultation.</h2>
+          <h2>Arrange your personal consultation today.</h2>
         </div>
         <div class="contact-grid">
           <div class="contact-panel">
             <div class="detail-item">
-              <h3>Phone</h3>
+              <h3><i class="fa-solid fa-phone"></i> Phone</h3>
               <p><a href="tel:+256706651656">+256 706 651 656</a></p>
             </div>
             <div class="detail-item">
-              <h3>WhatsApp</h3>
-              <p><a href="https://wa.me/256706651656" target="_blank" rel="noreferrer">Chat with us</a></p>
+              <h3><i class="fa-brands fa-whatsapp"></i> WhatsApp</h3>
+              <p><a href="https://wa.me/256706651656" target="_blank" rel="noreferrer">Message us directly</a></p>
             </div>
             <div class="detail-item">
-              <h3>Email</h3>
+              <h3><i class="fa-solid fa-envelope"></i> Email</h3>
               <p><a href="mailto:info@kizzmich.com">info@kizzmich.com</a></p>
             </div>
             <div class="detail-item">
-              <h3>Location</h3>
+              <h3><i class="fa-solid fa-location-dot"></i> Location</h3>
               <p>Liberty Tower, Kampala Road, opposite King Fahd</p>
             </div>
             <div class="detail-item">
-              <h3>Opening hours</h3>
+              <h3><i class="fa-solid fa-clock"></i> Working Hours</h3>
               <p>Mon - Sat: 09:00 - 18:00</p>
             </div>
             <div class="contact-actions">
-              <a class="btn btn-secondary" href="https://wa.me/256706651656" target="_blank" rel="noreferrer">WhatsApp</a>
-              <a class="btn btn-primary" href="mailto:info@kizzmich.com">Email Us</a>
+              <a class="btn btn-secondary" href="https://wa.me/256706651656" target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+              <a class="btn btn-primary" href="https://www.instagram.com/kizz_mich" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
             </div>
           </div>
           <form class="contact-form" novalidate>
@@ -269,43 +361,61 @@
           </form>
         </div>
         <div class="map-card">
-          <iframe
-            title="Kizz Mich location map"
-            src="https://www.google.com/maps?q=Liberty%20Tower%20Kampala%20Road%20opposite%20King%20Fahd&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <iframe title="Kizz Mich location map" src="https://www.google.com/maps?q=Liberty%20Tower%20Kampala%20Road%20opposite%20King%20Fahd&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
     </main>
+
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
           <h3>Kizz Mich</h3>
           <p>Luxury tailoring crafted with precision, refinement and modern elegance.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/kizz_mich" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/256706651656" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
         </div>
         <div>
-          <h3>Quick links</h3>
+          <h3>Quick Links</h3>
           <ul>
             <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#categories">Collections</a></li>
-            <li><a href="#trust">Expertise</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h3>Contact</h3>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="category.html?cat=business">Business Suits</a></li>
+            <li><a href="category.html?cat=wedding">Wedding Suits</a></li>
+            <li><a href="category.html?cat=prom">Prom Suits</a></li>
+            <li><a href="category.html?cat=bespoke">Bespoke Tailoring</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Visit Us</h3>
           <p><a href="tel:+256706651656">+256 706 651 656</a></p>
           <p><a href="mailto:info@kizzmich.com">info@kizzmich.com</a></p>
           <p>Liberty Tower, Kampala Road, Kampala</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Kizz Mich. All Rights Reserved.</p>
+        <p>© 2026 Kizz Mich. All rights reserved.</p>
       </div>
     </footer>
-    <a class="whatsapp-float" href="https://wa.me/256706651656" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">💬</a>
-    <button class="back-to-top" aria-label="Back to top">↑</button>
+
+    <a class="whatsapp-float" href="https://wa.me/256706651656" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Close gallery"><i class="fa-solid fa-xmark"></i></button>
+      <img class="lightbox-image" src="" alt="" />
+    </div>
+
     <script src="script.js"></script>
     <script type="application/ld+json">
       {
@@ -326,4 +436,3 @@
     </script>
   </body>
 </html>
-'@; Set-Content -Path .\index.new.html -Value $content -Encoding utf8; Move-Item -Force .\index.new.html .\index.html; Get-Content .\index.html -TotalCount 20
